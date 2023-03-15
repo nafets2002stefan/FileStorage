@@ -6,14 +6,20 @@ using System.Threading.Tasks;
 
 namespace FileStorage.FileStorage.Resource.Contracts.FileStorage.Resource.Contracts.Commands
 {
+    public enum FileExtension {
+        Pdf,
+        Excel,
+        Doc,
+        Jpg,
+        Jpeg
+    }
+
     public class UploadFileCommand
     {
-        public string Stream { get; set; }
-        public string CustomPath { get; set; }
-        public string ContentType { get; set; }
-
-        public string Extension { get; set; }
-
         public string FileName { get; set; }
+        public string FileContent { get; set; }
+        public string FilePath { get; set; }
+        public FileExtension FileType { get; set; }
     }
+
 }

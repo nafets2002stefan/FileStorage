@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileStorage.FileStorage.Resource.Contracts.FileStorage.Resource.Contracts.Queries
 {
-    public class DownloadContentQuery
+    public class DownloadFileQuery
     {
         public string FileName { get; set; }
 
-        public string Path { get; set; }
+        public string FilePath { get; set; }
 
-        public string GetSingleFilePath => $"{Path}/{FileName}";
     }
 }
