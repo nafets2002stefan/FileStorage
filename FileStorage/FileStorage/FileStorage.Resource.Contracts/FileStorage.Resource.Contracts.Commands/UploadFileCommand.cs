@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace FileStorage.FileStorage.Resource.Contracts.FileStorage.Resource.Contracts.Commands
 {
     public enum FileExtension {
-        Pdf,
-        Excel,
-        Doc,
-        Jpg,
-        Jpeg
+        pdf,
+        xls,
+        doc,
+        jpg,
+        jpeg
     }
 
     public class UploadFileCommand
